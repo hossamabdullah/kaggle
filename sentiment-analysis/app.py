@@ -41,17 +41,6 @@ vectorizer = TfidfVectorizer(stop_words='english')
 x_train_transformed = vectorizer.fit_transform(x_train)
 x_test_transformed  = vectorizer.transform(x_test)
 
-# x_train_transformed = np.asarray(x_train_transformed)
-# x_test_transformed = np.asarray(x_test_transformed)
-## feature selection, because text is super high dimensional and
-## can be really computationally chewy as a result
-print "applying feature selection"
-selector = SelectPercentile(percentile=10)
-selector.fit(x_train_transformed, y_train)
-x_train_transformed = selector.transform(x_train_transformed).toarray()
-x_test_transformed  = selector.transform(x_test_transformed).toarray()
-
-
 print "applying svm algorithm"
 # clf = svm.SVC(decision_function_shape='ovo')
 clf = OneVsOneClassifier(LinearSVC())
