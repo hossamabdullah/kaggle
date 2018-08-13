@@ -1,0 +1,58 @@
+Understanding the data, put them in segments and assign them an expected importance, specify type
+building
+    MSSubClass: Identifies the type of dwelling involved in the sale.	
+    MSZoning: Identifies the general zoning classification of the sale.
+    Alley: Type of alley access to property
+    LotShape: General shape of property
+    LandContour: Flatness of the property
+    Utilities: Type of utilities available
+    LotConfig: Lot configuration
+    LandSlope: Slope of property
+    Neighborhood: Physical locations within Ames city limits  ==> Medium
+    Condition1: Proximity to various conditions ==> M
+    Condition2: Proximity to various conditions (if more than one is present) ==> M
+    BldgType: Type of dwelling ==> High
+    HouseStyle: Style of dwelling ==> Medium
+    OverallQual: Rates the overall material and finish of the house ==> H
+    OverallCond: Rates the overall condition of the house ==> H
+    YearBuilt: Original construction date ==> H
+    YearRemodAdd: Remodel date (same as construction date if no remodeling or additions) ==> HalfBath
+    RoofStyle: Type of roof ==> M
+    RoofMatl: Roof material ==> L
+    Exterior1st: Exterior covering on house ==> M
+    Exterior2nd: Exterior covering on house (if more than one material) ==> M
+    MasVnrType: Masonry veneer type ==> M
+    ExterQual: Evaluates the quality of the material on the exterior => M
+    ExterCond: Evaluates the present condition of the material on the exterior => H
+    Foundation: Type of foundation => M
+    BsmtQual: Evaluates the height of the basement ==> M
+    BsmtCond: Evaluates the general condition of the basement => M
+    BsmtExposure: Refers to walkout or garden level walls ==> M
+    BsmtFinType1: Rating of basement finished area => M
+    BsmtFinSF1: Type 1 finished square feet => M
+    BsmtFinType2: Rating of basement finished area (if multiple types) => M
+space
+    LotArea: Lot size in square feet => H
+    MasVnrArea: Masonry veneer area in square feet ==> M 
+location
+    LotFrontage: Linear feet of street connected to property => M
+    Street: Type of road access to property => H
+
+
+'Id', 'MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street',
+       'Alley', 'LotShape', 'LandContour', 'Utilities', 'LotConfig',
+       'LandSlope', 'Neighborhood', 'Condition1', 'Condition2', 'BldgType',
+       'HouseStyle', 'OverallQual', 'OverallCond', 'YearBuilt', 'YearRemodAdd',
+       'RoofStyle', 'RoofMatl', 'Exterior1st', 'Exterior2nd', 'MasVnrType',
+       'MasVnrArea', 'ExterQual', 'ExterCond', 'Foundation', 'BsmtQual',
+       'BsmtCond', 'BsmtExposure', 'BsmtFinType1', 'BsmtFinSF1',
+       'BsmtFinType2', 'BsmtFinSF2', 'BsmtUnfSF', 'TotalBsmtSF', 'Heating',
+       'HeatingQC', 'CentralAir', 'Electrical', '1stFlrSF', '2ndFlrSF',
+       'LowQualFinSF', 'GrLivArea', 'BsmtFullBath', 'BsmtHalfBath', 'FullBath',
+       'HalfBath', 'BedroomAbvGr', 'KitchenAbvGr', 'KitchenQual',
+       'TotRmsAbvGrd', 'Functional', 'Fireplaces', 'FireplaceQu', 'GarageType',
+       'GarageYrBlt', 'GarageFinish', 'GarageCars', 'GarageArea', 'GarageQual',
+       'GarageCond', 'PavedDrive', 'WoodDeckSF', 'OpenPorchSF',
+       'EnclosedPorch', '3SsnPorch', 'ScreenPorch', 'PoolArea', 'PoolQC',
+       'Fence', 'MiscFeature', 'MiscVal', 'MoSold', 'YrSold', 'SaleType',
+       'SaleCondition', 'SalePrice'
